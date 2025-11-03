@@ -3,11 +3,17 @@ import Home from "./pages/Home";
 import Agency from "./pages/Agency";
 import Projects from "./pages/Projects";
 import Loader from "./components/Loader";
+import Navbar from "./components/Navbar";
+import FullScreenNav from "./components/FullScreenNav";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <Navbar /> */}
+
+      <FullScreenNav />
+
+      {/* <BrowserRouter>
         <Loader />
 
         <Routes>
@@ -15,7 +21,7 @@ function App() {
           <Route path="/agency" element={<Agency />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }

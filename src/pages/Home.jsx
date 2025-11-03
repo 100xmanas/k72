@@ -9,7 +9,7 @@ function Home() {
         <Video />
       </div>
 
-      <div className="h-screen w-screen relative flex flex-col items-center justify-between py-2">
+      <div className="h-screen w-screen relative flex flex-col items-center justify-between py-2 pt-16">
         <HomeTop />
         <HomeBottom />
       </div>
