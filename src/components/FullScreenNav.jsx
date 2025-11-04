@@ -1,9 +1,10 @@
-import React from "react";
-
-function FullScreenNav() {
+function FullScreenNav({ setOpenNav }) {
   return (
-    <div className="absolute h-screen w-full flex flex-col justify-between bg-black text-white py-16">
-      <div className="flex items-center justify-end text-[2vw] pr-10">
+    <div className="absolute h-screen w-full flex flex-col justify-between z-50 bg-black text-white py-16">
+      <div
+        onClick={() => setOpenNav(false)}
+        className="flex items-center justify-end text-[2vw] pr-10"
+      >
         <span className="cursor-pointer">❌</span>
       </div>
 

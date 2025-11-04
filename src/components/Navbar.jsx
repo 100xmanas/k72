@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-function Navbar() {
+function Navbar({ setOpenNav }) {
   const GreenRef = useRef(null);
 
   return (
@@ -32,7 +32,10 @@ function Navbar() {
           ref={GreenRef}
           className="absolute z-9 bg-green-500 transition-all h-0 w-full"
         ></div>
-        <div className="w-full absolute z-10 h-full flex items-center justify-end">
+        <div
+          onClick={() => setOpenNav(true)}
+          className="w-full absolute z-10 h-full flex items-center justify-end"
+        >
           <div className="flex flex-col items-end gap-2 px-2">
             <div className="h-px w-16 rounded-full bg-white"></div>
             <div className="h-px w-8 rounded-full bg-white"></div>

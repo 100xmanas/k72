@@ -5,15 +5,19 @@ import Projects from "./pages/Projects";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import FullScreenNav from "./components/FullScreenNav";
+import { useState } from "react";
 
 function App() {
+
+  const [opevNav, setOpenNav] = useState(false)
+
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar opevNav = {opevNav} setOpenNav={setOpenNav} />
 
-      <FullScreenNav />
+      {opevNav && <FullScreenNav opevNav = {opevNav} setOpenNav={setOpenNav} />}
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Loader />
 
         <Routes>
@@ -21,7 +25,7 @@ function App() {
           <Route path="/agency" element={<Agency />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </>
   );
 }
