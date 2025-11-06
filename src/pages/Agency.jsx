@@ -59,8 +59,8 @@ function Agency() {
             alt="Img"
           />
         </div>
-        <div className="relative font-[font2]">
-          <div className="pt-[50vh]">
+        <div className="relative font-[font2] py-[50vh]">
+          <div className="">
             <h1 className="text-[16.5vw] uppercase text-center leading-[18vw]">
               100xmanas <br /> Douze
             </h1>
@@ -76,7 +76,6 @@ function Agency() {
         </div>
       </div>
 
-      <div className="section2 h-screen"></div>
     </div>
   );
 }
